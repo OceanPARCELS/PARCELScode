@@ -74,7 +74,21 @@ From there:
 - create a git branch, implement, commit, and push your changes
 - `create a pull request <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork>`_ (PR) into ``main`` of the original repo making sure to link to the issue that you are working on. Not yet finished with your feature but still want feedback on how you're going? Then mark it as "draft" and ``@ping`` a maintainer. See our `maintainer notes <maintainer.md>`_ to see our PR review workflow.
 
-If you made changes to the documentation, and want to render a local version, you can run the command ``sphinx-autobuild --ignore "*.zip" docs docs/_build`` to create a server to automatically rebuild the documentation when you make changes.
+Here is a short overview of a few different commands that we use during development:
+
+.. code-block:: bash
+
+   # Run unit-tests
+   pytest
+
+   # Run typechecking
+   mypy
+
+   # Build the documentation. This launches a server, automatically rebuilt when changes are made
+   sphinx-autobuild --ignore "*.zip" docs docs/_build
+
+
+To run performance benchmarks, see the `the benchmarking page <benchmarking.md>`_.
 
 Code guidelines
 ~~~~~~~~~~~~~~~

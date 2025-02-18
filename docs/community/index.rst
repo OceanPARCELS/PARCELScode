@@ -18,3 +18,4 @@ See the sections in the primary sidebar and below to explore.
     :maxdepth: 1
 
     maintainer
+    benchmarking

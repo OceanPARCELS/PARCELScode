@@ -9,6 +9,7 @@ repos:
       - id: check-json
         types: [text]
         files: \.(json|ipynb)$
+        exclude: ^asv_bench/asv\.conf\.json$
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.8.6
     hooks:

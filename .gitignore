@@ -5,6 +5,10 @@ lib/
 bin/
 parcels_examples
 
+# asv environments
+asv_bench/.asv
+asv_bench/pkgs
+
 *.so
 *.log
 *.nc
